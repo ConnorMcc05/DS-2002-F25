@@ -1,0 +1,41 @@
+--- Running Test Pipeline (Built-in Test Modes) ---
+Starting update_portfolio.py in Test Mode...
+Wrote portfolio to test_card_portfolio.csv
+Total Portfolio Value: $326.55
+Most Valuable Card: Charizard (base0-4) — $250.75
+Test complete.
+
+--- Adding New Card Set ---
+TCG Card Set ID (e.g., base1, base4): base1
+Fetching card data for set 'base1'...
+Saved to card_set_lookup/base1.json
+
+--- Starting Portfolio Build Workflow ---
+Do you want to add a NEW card set? (yes/no)
+yes
+make[1]: Entering directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+--- Adding New Card Set ---
+TCG Card Set ID (e.g., base1, base4): base4
+Fetching card data for set 'base4'...
+Saved to card_set_lookup/base4.json
+make[1]: Leaving directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+Card set added. Add another? (yes/no)
+no
+Do you want to refresh ALL existing card sets? (yes/no)
+yes
+make[1]: Entering directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+--- Refreshing All Card Sets ---
+Refreshing all card sets in card_set_lookup/...
+Updating set 'base1'...
+Wrote refreshed data to card_set_lookup/base1.json
+Updating set 'base4'...
+Wrote refreshed data to card_set_lookup/base4.json
+All card sets have been refreshed.
+make[1]: Leaving directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+Starting production pipeline...
+ETL: updating portfolio (card_portfolio.csv)...
+Wrote portfolio to card_portfolio.csv
+Reporting: generating summary from card_portfolio.csv...
+Total Portfolio Value: $5,690.04
+Most Valuable Card: Charizard (base1-4) — $458.29
+Pipeline complete.
